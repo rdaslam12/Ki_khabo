@@ -3,108 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ki Khabo?</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Garamond, serif;
-            background-color: #f0c08b;
-            color: #490404;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4077c4;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .navbar {
-            background-color: #130b5dc1;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            font-size: 18px;
-        }
-        .navbar a:hover {
-            background-color:  #e6a573c1;
-            border-radius: 5px;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-        }
-        .about, .login-section {
-            width: 45%;
-            padding: 20px;
-            background-color:  #e6a573c1;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        .about {
-            text-align: left;
-        }
-        .login-section {
-            text-align: center;
-        }
-        .about img, .login-section img {
-            width: 100%;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #c47740;;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background-color: #e74c3c;
-        }
-    </style>
+    <title>Ki Khabo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to KiKhabo</h1>
-        <p>Discover the best restaurants and share your experiences!</p>
+        <a href="index.html"> 
+        <img class="logo" src="images/kikhabologo.png" alt="logoeita">
+    </a>
+        <nav>
+          <ul class="nav__links"> 
+            <li><a href="feed.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="write_review.html">Write a Review</a></li>             
+            <li><a href="profile.html" class="profile-btn">Profile</a></li>  
+          </ul>
+        </nav>
     </header>
-    
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="top-restaurants.html">Top Restaurants</a>
-        <a href="profile.html">Profile</a>
-        <a href="settings.html">Settings</a>
-        <a href="past-reviews.html">Past Reviews</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-    
+
     <main class="container">
-        <section class="about">
-            <img src="f6afbf14b1b79881ec6b07721a1eb0ce.jpg" alt="Delicious food">
-            <h2>About KiKhabo</h2>
-            <p>KiKhabo is a platform where you can find the best dining spots, read honest reviews, and contribute their own experiences. Whether you're searching for a cozy café, a luxurious restaurant, or a hidden gem, our platform helps you make informed choices for your next meal.</p>
-        </section>
-        
-        <section class="login-section">
-            <h2>Explore, Review, and Enjoy!</h2>
-            <p> </p>
-            <a href="login.html" class="btn">Log In</a>
-            <p>New here? <a href="signup.html">Sign up</a></p>
-        </section>
+        <div class="content-wrapper">
+            <section class="about">
+                <h2>About KiKhabo</h2>
+                <p>KiKhabo is a platform where you can find the best dining spots, read honest reviews, and contribute your own experiences. Whether you're searching for a cozy café, a luxurious restaurant, or a hidden gem, our platform helps you make informed choices for your next meal.</p>
+            </section>
+            
+            <section class="login-section">
+                <h2>Explore, Review, and Enjoy!</h2>
+                <a href="login.html" class="btn">Log In</a>
+                <p>New here? <a href="signup.html">Sign up</a></p>
+            </section>
+        </div>
     </main>
 </body>
 </html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    background-color: #ffffff;    
+
+}
+li , a {
+    font-family: "Lexend Deca" , sans-serif  ;
+    font-weight: 500;
+    font-size: 16px;
+    color: #490404;
+    text-decoration: none;
+}
+
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+   transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #e3096b;
+
+}
+
+.container {
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 50px;
+    background-image: url(images/landingpage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: column; /* Stack the sections vertically */
+    align-items: flex-end; /* Align the sections to the right */
+    gap: 20px;
+}
+
+.about, .login-section {
+    width: 100%;
+    padding: 20px;
+    background-color:#ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    max-width: 500px;
+
+    
+
+}
+
+.about {
+    text-align: center;
+
+}
+
+.login-section {
+    text-align: center;
+}
+
+.about img, .login-section img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-radius: 25px;
+    
+
+}
+h2, p{
+    font-family: "Lexend Deca" , sans-serif  ;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #c47740;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #3d0909;
+}
+
+.logo {
+    width: 100px; 
+    height: auto;
+}
